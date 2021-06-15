@@ -6,7 +6,7 @@ function setup(){
     canvas.position(500, 550);
 
     poseNet = ml5.poseNet(video, modelLoaded);
-    poseNet.on(pose,gotPoses);
+    poseNet.on('pose',gotPoses);
 }
 function draw(){
     background('blue');
